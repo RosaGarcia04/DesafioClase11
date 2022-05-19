@@ -1,0 +1,422 @@
+/*Importamos la fuente de google*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+}
+
+/*Inicia el estilo para encabezado*/
+
+.container_index {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto auto auto auto auto auto auto;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Navbar Navbar Navbar Navbar Navbar Navbar Navbar Navbar Navbar Navbar Navbar Navbar"
+    "Banner Banner Banner Banner Banner Banner Banner Banner Banner Banner Banner Banner"
+    "Título Título Título Título Título Título Título Título Título Título Título Título"
+    "Imagen1 Imagen1 Imagen1 Imagen1 Imagen2 Imagen2 Imagen2 Imagen2 Imagen-3 Imagen-3 Imagen-3 Imagen-3"
+    "Espaciado_Entre_Imgs Espaciado_Entre_Imgs Espaciado_Entre_Imgs Espaciado_Entre_Imgs Espaciado_Entre_Imgs Espaciado_Entre_Imgs Espaciado_Entre_Imgs Espaciado_Entre_Imgs Espaciado_Entre_Imgs Espaciado_Entre_Imgs Espaciado_Entre_Imgs Espaciado_Entre_Imgs"
+    "Imagen4 Imagen4 Imagen4 Imagen4 Imagen5 Imagen5 Imagen5 Imagen5 Imagen6 Imagen6 Imagen6 Imagen6"
+    "Textos_Img4 Textos_Img4 Textos_Img4 Textos_Img4 Textos_Img5 Textos_Img5 Textos_Img5 Textos_Img5 Textos_Img6 Textos_Img6 Textos_Img6 Textos_Img6"
+    ". . . . . . . . . . . ."
+    "Footer Footer Footer Footer Footer Footer Footer Footer Footer Footer Footer Footer";
+}
+
+.Navbar { grid-area: Navbar; }
+
+.Banner { grid-area: Banner; }
+
+.Título { grid-area: Título; }
+
+.Imagen1 { grid-area: Imagen1; }
+
+.Imagen2 { grid-area: Imagen2; }
+
+.Imagen-3 { grid-area: Imagen-3; }
+
+.Espaciado_Entre_Imgs { grid-area: Espaciado_Entre_Imgs; }
+
+.Imagen4 { grid-area: Imagen4; }
+
+.Imagen5 { grid-area: Imagen5; }
+
+.Imagen6 { grid-area: Imagen6; }
+
+.Textos_Img4 { grid-area: Textos_Img4; }
+
+.Textos_Img5 { grid-area: Textos_Img5; }
+
+.Textos_Img6 { grid-area: Textos_Img6; }
+
+.Footer { grid-area: Footer; }
+
+
+.Navbar{
+	background-color: #87A8FC;
+	font-weight: 700;
+	position: fixed;
+	width: 100%;
+	height: 50px;
+	top: 0;
+	left: 0;
+}
+
+.Navbar ul{
+    display: flex;
+    align-content: center;
+    flex-direction: row; 
+   justify-content: space-between;
+   padding: 10px 10px 10px 10px;
+}
+
+@media all (min-width: 768px){
+	.Navbar ul{
+		padding: 5px 5px 5px 5px;
+		flex-wrap: wrap;
+	}
+	.image-fondo{
+		background-size: cover;
+
+	}
+  .Imagen1{
+    display: flex;
+   flex-direction: column;
+   width: 50%;
+  }
+}
+
+/*Aquí van los estilos para dar formato a los enlaces del navbar*/
+.Navbar .navbar_enlaces{
+	color: #BCC6EC;
+	text-decoration: none;
+
+}
+
+.Navbar .navbar_enlaces:hover{
+	color: #8BE6EC;
+
+}
+
+.Navbar .navbar_enlaces:active{
+	color: #8BE6EC;
+
+}
+
+.Navbar .navbar_enlaces:visited{
+	color: #5B70BA;
+
+}
+
+.image-fondo {
+    background-image: url("../assets/inicio.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+.image-fondo-catalogo {
+    background-image: url("../assets/catalogo.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+.image-fondo-pedidos {
+    background-image: url("../assets/pedidos.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+.image-fondo-mario {
+    background-image: url("../assets/sobremario.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+.image-fondo-pedidos {
+    background-image: url("../assets/pedidos.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+.image-fondo-blog {
+    background-image: url("../assets/blog.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+.honoka{
+	max-width: 100%;
+}
+.cabecera{
+  color: #fff;
+  height: 350px;
+  line-height: 200px;
+  text-align: center;
+  vertical-align: middle;
+  text-shadow: #111 0px 0px 10px;
+}
+.logo_cabecera{
+	height: 50px;
+}
+
+body{
+	background-color: #fff;
+	font-size: 1rem;
+	font-family: 'Montserrat', sans-serif;
+/*margin: 0 sirve para eliminar los bordes del body*/
+	margin:0;
+}
+
+/*Estilo para los titulos del body*/
+.titulo_contenido{
+	margin-top: 15px;
+	margin-bottom: 15px;
+	font-size: 2rem;
+	font-weight: 700;
+	text-align: center;
+	color: #87A8FC;
+
+}
+
+/*Todo lo referente a las imágenes*/
+.imagenes_contenido{
+	width: 400px;
+	height: 400px;
+	margin: 10px;
+	padding: 10px;
+	border-radius: 15px 15px 0 0;
+}
+
+/*Estilo para colocarlas en tarjetas*/
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 450px;
+  border-radius: 15px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+  padding: 2px 16px;
+}
+/*Hasta acá llega todo lo referente a imágenes*/
+
+.b_comprar{
+	background-color: #65A2FD;
+	border-radius: 15px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	text-decoration: none;
+}
+
+.textos{
+	padding-bottom: 12px;
+}
+
+.titulo_elemento{
+	padding-bottom: 12px;
+}
+
+/*Aquí está el estilo del acordeón/collapsable*/
+.accordion {
+  background-color: #87A8FC;
+  color: #000;
+  cursor: pointer;
+  padding-top: 30px;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #95C1F6; 
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: #87A8FC;
+  overflow: hidden;
+}
+
+.active .panel {
+  padding: 0 18px;
+  display: flex;
+  background-color: #87A8FC;
+  overflow: hidden;
+}
+
+.container_catalogo {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto auto auto auto auto auto auto auto;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Navbar Navbar Navbar Navbar Navbar Navbar Navbar Navbar Navbar Navbar Navbar Navbar"
+    "Banner Banner Banner Banner Banner Banner Banner Banner Banner Banner Banner Banner"
+    "Título Título Título Título Título Título Título Título Título Título Título Título"
+    "Empanadas Empanadas Empanadas Empanadas Empanadas Empanadas Empanadas Empanadas Empanadas Empanadas Empanadas Empanadas"
+    "Espaciado Espaciado Espaciado Espaciado Espaciado Espaciado Espaciado Espaciado Espaciado Espaciado Espaciado Espaciado"
+    "Panes Panes Panes Panes Panes Panes Panes Panes Panes Panes Panes Panes"
+    "Espaciado1 Espaciado1 Espaciado1 Espaciado1 Espaciado1 Espaciado1 Espaciado1 Espaciado1 Espaciado1 Espaciado1 Espaciado1 Espaciado1"
+    "Pays Pays Pays Pays Pays Pays Pays Pays Pays Pays Pays Pays"
+    ". . . . . . . . . . . ."
+    "Footer Footer Footer Footer Footer Footer Footer Footer Footer Footer Footer Footer";
+}
+
+.Navbar { grid-area: Navbar; }
+
+.Banner { grid-area: Banner; }
+
+.Título { grid-area: Título; }
+
+.Empanadas { grid-area: Empanadas; }
+
+.Espaciado { grid-area: Espaciado; }
+
+.Panes { grid-area: Panes; }
+
+.Espaciado1 { grid-area: Espaciado1; }
+
+.Footer { grid-area: Footer; }
+
+.Pays { grid-area: Pays; }
+
+.Footer{
+	background-color: #65A2FD;
+	font-weight: 700;
+	text-align: center;
+    width: 100%;
+	height: 50px;
+  	bottom: 0;
+  	margin-top: 0px;
+ 	padding-top: 0px;
+ 	clear: both;
+}
+
+.container_mario {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto auto;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Navbar Navbar Navbar Navbar Navbar Navbar Navbar Navbar Navbar Navbar Navbar Navbar"
+    "Banner Banner Banner Banner Banner Banner Banner Banner Banner Banner Banner Banner"
+    "Imágenes-Mario Imágenes-Mario Imágenes-Mario Imágenes-Mario Imágenes-Mario Informacion Informacion Informacion Informacion Informacion Informacion Informacion"
+    "Footer Footer Footer Footer Footer Footer Footer Footer Footer Footer Footer Footer";
+}
+
+.Navbar { grid-area: Navbar; }
+
+.Banner { grid-area: Banner; }
+
+.Footer { grid-area: Footer; }
+
+.Imágenes-Mario { grid-area: Imágenes-Mario; }
+
+.Informacion {  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Título";
+    "Contenido";
+  grid-area: Informacion;
+}
+
+.Título { grid-area: Título; }
+
+.Contenido { grid-area: Contenido; }
+
+.container_pedidos {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Navbar Navbar Navbar Navbar Navbar Navbar Navbar Navbar Navbar Navbar Navbar Navbar"
+    "Banner Banner Banner Banner Banner Banner Banner Banner Banner Banner Banner Banner"
+    "Formulario Formulario Formulario Formulario Formulario Formulario Formulario Formulario Imagen Imagen Imagen Imagen"
+    "Formulario Formulario Formulario Formulario Formulario Formulario Formulario Formulario Imagen Imagen Imagen Imagen"
+    "Formulario Formulario Formulario Formulario Formulario Formulario Formulario Formulario Imagen Imagen Imagen Imagen"
+    "Formulario Formulario Formulario Formulario Formulario Formulario Formulario Formulario Imagen Imagen Imagen Imagen"
+    "Formulario Formulario Formulario Formulario Formulario Formulario Formulario Formulario Imagen Imagen Imagen Imagen"
+    "Formulario Formulario Formulario Formulario Formulario Formulario Formulario Formulario Imagen Imagen Imagen Imagen"
+    "Formulario Formulario Formulario Formulario Formulario Formulario Formulario Formulario Imagen Imagen Imagen Imagen"
+    "Formulario Formulario Formulario Formulario Formulario Formulario Formulario Formulario Imagen Imagen Imagen Imagen"
+    "Formulario Formulario Formulario Formulario Formulario Formulario Formulario Formulario Imagen Imagen Imagen Imagen"
+    "Formulario Formulario Formulario Formulario Formulario Formulario Formulario Formulario Imagen Imagen Imagen Imagen"
+    "Footer Footer Footer Footer Footer Footer Footer Footer Footer Footer Footer Footer";
+}
+
+.Navbar { grid-area: Navbar; }
+
+.Banner { grid-area: Banner; }
+
+.Imagen { grid-area: Imagen; }
+
+.Formulario { grid-area: Formulario; }
+
+.Footer { grid-area: Footer; }
+
+.container_blog {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1.1fr 0.9fr;
+  grid-template-rows: auto auto auto auto;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Navbar Navbar Navbar Navbar Navbar Navbar Navbar Navbar Navbar Navbar Navbar Navbar"
+    "Banner Banner Banner Banner Banner Banner Banner Banner Banner Banner Banner Banner"
+    "TextoBlog TextoBlog TextoBlog TextoBlog TextoBlog TextoBlog TextoBlog TextoBlog Imagen Imagen Imagen Imagen"
+    "Footer Footer Footer Footer Footer Footer Footer Footer Footer Footer Footer Footer";
+}
+
+.Navbar { grid-area: Navbar; }
+
+.Banner { grid-area: Banner; }
+
+.Footer { grid-area: Footer; }
+
+.TextoBlog { grid-area: TextoBlog; }
+
+.Imagen { grid-area: Imagen; }
+
+
+.creditos{
+	margin: 10px;
+	padding: 15px;
+	color: #FFFFFF;
+
+}
+
+.numero_contacto{
+	padding: 15px;
+	color: #FFFFFF;
+}
+
+.facebook{
+	color: #2441A8;
+
+}
+
