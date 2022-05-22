@@ -24,11 +24,31 @@ body{
 	min-height: 400px;
 	height: 50vh;
 }
+#banner_blog{
+	position: relative;
+	background-image: url('../assets/blog.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	min-height: 400px;
+	height: 50vh;
+}
 .color_nav{
 	background-color: #87A8FC;
 }
+#titulos_nav{
+	color: #5D78D7; 
+
+}
+#titulos_nav:hover{
+	color: #8BE6EC; 
+
+}
 #banner .texto{
 	z-index: 2;
+}
+.subtitulo_banner{
+	font-size: 1.2rem;
 }
 .titulos{
 	font-size: 3rem;
@@ -63,6 +83,9 @@ body{
 	.img_mario{
 	max-width: 100%;
 	}
+	#img1_seccion_destacada{
+		max-width: 20rem;
+	}
 }
 @media all and (max-width: 768px){
 	.titulos{
@@ -77,6 +100,9 @@ body{
 	.img_mario{
 	max-width: 100%;
 	}
+	#img1_seccion_destacada{
+		max-width: 25rem;
+	}	
 }
 @media all and (max-width: 576px){
 	.titulos{
@@ -91,6 +117,9 @@ body{
 	.img_mario{
 	max-width: 50%;
 	}
+	#img1_seccion_destacada{
+		max-width: 20rem;
+	}	
 }
 .imgs_destacados{
 	max-width: 100%;
@@ -104,11 +133,19 @@ body{
 }
 .precios_panes{
 	font-weight: 500;
-	font-size: 1.2rem;
+	font-size: 1rem;
 }
 .boton_comprar{
 	font-weight: 500;
 	font-size: 1.2rem;
+}
+.boton_comprar:hover{
+  color: rgba(255, 255, 255, 1) !important;
+  box-shadow: 0 4px 16px rgba(49, 138, 172, 1);
+  transition: all 0.2s ease;
+}
+#seccion_destacada{
+	background-color: #DDE6FD;
 }
 #footer .titulos{
 	font-weight: 500;
